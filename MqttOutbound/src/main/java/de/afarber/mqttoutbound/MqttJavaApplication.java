@@ -1,4 +1,4 @@
-package de.afarber.mqttinbound;
+package de.afarber.mqttoutbound;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +13,7 @@ import org.springframework.messaging.MessageHandler;
 import org.springframework.messaging.MessagingException;
 
 public class MqttJavaApplication {
+
     public static void main(String[] args) {
     	new SpringApplicationBuilder(MqttJavaApplication.class)
     			.web(false)
@@ -52,4 +53,3 @@ public class MqttJavaApplication {
     	};
     }
 }
-
